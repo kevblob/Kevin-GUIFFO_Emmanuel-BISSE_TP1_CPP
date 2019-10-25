@@ -11,6 +11,9 @@ public:
 	int getMonth() const;           //fonction constante pour empecher la modification de la variable
 	int getDay() const;
 	int getYear() const;
+	int setMonth();
+	int setDay();
+	int setYear();
 
 private: 
 	int m_month;

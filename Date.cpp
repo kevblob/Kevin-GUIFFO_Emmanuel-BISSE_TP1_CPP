@@ -30,7 +30,7 @@ void Date::setMonth (int month) {
 	}
 }
 
-void Date::setDay (int day) { // to be completed
+void Date::setDay (int day) {
 	if ((day > 0) && (day <=31)) {
 		m_day = day;
 	}  
@@ -39,7 +39,7 @@ void Date::setDay (int day) { // to be completed
 	}
 }
 
-void Date::setYear (int year) { // to be completed
+void Date::setYear (int year) {
 	if (year > 0) {
 		m_year = year;
 	}  

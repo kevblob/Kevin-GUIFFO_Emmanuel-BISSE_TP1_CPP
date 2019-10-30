@@ -7,4 +7,5 @@ _________________________________________________________________
 
 ===== Question 2 : Création de la classe Chambre par Dev1 =====
    -> création des fichiers Makefile.chambre, Chambre.cpp, Chambre.h et Chambre-test.cpp
-   -> 
+   -> Ajout de méthode permettant de modifier une chambre
+   

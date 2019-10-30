@@ -3,11 +3,11 @@
 #include <iostream>
 #include "Chambre.h"
 
-Chambre::Chambre(int idch, std::string type, float prix)
+Chambre::Chambre(int idch, std::string type, float Price)
 {
 	m_idch=idch;
 	m_type=type;
-	m_prix=prix;
+	m_Price=Price;
 }
 
 int Chambre::getIdch() const{
@@ -18,29 +18,29 @@ std::string Chambre::getType() const {
 	return m_type;
 }
 
-int Chambre::getPrix() const {
-	return m_prix;
+int Chambre::getPrice() const {
+	return m_Price;
 }
 
 void Chambre::setIdch (int idch) {
-	if (idch > 0 && idch != m_idch)
+	if (idch > 0 ) {  //improve to check the unique identifier
 		m_idch = idch;
-	else
-		std::cout<<"Error: the identifier " <<idch<<" already exists or <=0"<<std::endl;
-
+	}
+	else {
+		std::cout<<"Error: the identifier " <<idch<<" <=0"<<std::endl;
+	}
 }
-
 
 void Chambre::setType (std::string type) {
 	m_type = type;
 }
 
-void Chambre::setPrix (float prix) {
-	if (prix <= 0) {
-		m_prix = prix;
+void Chambre::setPrice (float Price) {
+	if (Price > 0) {
+		m_Price = Price;
 	}  
 	else {
-		std::cout << "Error: " << prix << " <= 0 " << std::endl; 
+		std::cout << "Error: " << Price << " <= 0 " << std::endl; 
 	}
 }
 

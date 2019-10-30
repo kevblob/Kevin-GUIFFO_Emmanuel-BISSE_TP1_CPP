@@ -9,8 +9,7 @@ int main() {
 	Date new_date(1,4,2010);
 	std::cout << "New date is " << new_date.getMonth() << "/" << new_date.getDay()<< "/" << new_date.getYear() << std::endl;	
 	
-	//Modification de la  date new_date
-	Date new_date; 
+	//Modification de la  date new_date 
 	new_date.setMonth(12);
 	new_date.setDay(5);
 	new_date.setYear(2010);

@@ -1,7 +1,10 @@
 # itc313-TP1
-/**
- * Création de la classe Date par dev1
-   * creation des fichiers Date.cpp, Date.h, Date-test.cpp
-   * Ajout de méthodes pour modifier la Date
-   * Création du programme principale pour tester et valider le code de la classe Dates
-*/
+===== Question 1 : Création de la classe Date par dev1 =====
+   -> creation des fichiers Date.cpp, Date.h, Date-test.cpp
+   -> Ajout de méthodes pour modifier la Date
+   -> Création du programme principale pour tester et valider le code de la classe Dates
+_________________________________________________________________
+
+===== Question 2 : Création de la classe Chambre par Dev1 =====
+   -> création des fichiers Makefile.chambre, Chambre.cpp, Chambre.h et Chambre-test.cpp
+   -> 

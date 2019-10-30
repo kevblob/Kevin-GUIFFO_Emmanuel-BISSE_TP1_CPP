@@ -10,18 +10,18 @@
 class Chambre
 {
 public:
-	Chambre(int idch, std::string type, float prix);
+	Chambre(int idch=000000, std::string type="00000", float Price=0);
 	int getIdch() const;
-	int getPrix() const;
+	int getPrice() const;
 	std::string getType() const;
 	void setIdch(int idch);
 	void setType(std::string);
-	void setPrix(float prix);
+	void setPrice(float Price);
 
 private:
 	int m_idch; // identifiant de la chambre
 	std::string m_type; // ex : single, Suite Double
-	float m_prix; 
+	float m_Price; 
 	
 };
 

@@ -1,30 +1,32 @@
 
-
-#include <iostream>
+#include<iostream>
+#include<vector>
+#include<string>
 #include "Chambre.h"
 
+void displayChambre(Chambre ch_display){
+	std::cout<<"  ID : "<<ch_display.getIdch()<<std::endl;
+	std::cout<<"  Type : "<<ch_display.getType()<<std::endl;
+	std::cout<<"  Price : "<<ch_display.getPrice()<<"$"<<std::endl;
+	std::cout<<std::endl;
+}
+
 int main(){
+	uid idch;
 
-Chambre Chambre01(201901, "Double", 180);
-std::cout<<"Chambre01 Identifier : "<<Chambre01.getIdch()<<std::endl;
-std::cout<<"          Type : "<<Chambre01.getType()<<std::endl;
-std::cout<<"          Price : "<<Chambre01.getPrice()<<"$"<<std::endl;
+	Chambre ch(idch);
+	std::vector <Chambre> vector_chambre={ch};
 
-Chambre Chambre405;
-std::cout << "Default value"<< std::endl;
-std::cout<<"Chambre405 Identifier : "<<Chambre405.getIdch()<<std::endl;
-std::cout<<"           Type : "<<Chambre405.getType()<<std::endl;
-std::cout<<"           Price : "<<Chambre405.getPrice()<<"$"<<std::endl;
+	std::cout <<std::endl<<"Default value of room"<< std::endl;
+	displayChambre(vector_chambre.at(0));
 
-Chambre405.setIdch(-201901);
-Chambre405.setType("single");
-Chambre405.setPrice(205);
-std::cout << "After modification "<< std::endl;
-std::cout<<"Chambre405 Identifier : "<<Chambre405.getIdch()<<std::endl;
-std::cout<<"           Type : "<<Chambre405.getType()<<std::endl;
-std::cout<<"           Price : "<<Chambre405.getPrice()<<"$"<<std::endl;
+	Chambre ch1(idch, Suite, 500);
+	std::cout<<"Chambre_1 : "<<std::endl;
+	displayChambre(ch1);
 
-std::cout << "Run ok "<< std::endl;
-return 0;
+	Chambre ch2(idch);
+	std::cout<<"Chambre_2 : "<<std::endl;
+	displayChambre(ch2);
 
+	return 0;
 }

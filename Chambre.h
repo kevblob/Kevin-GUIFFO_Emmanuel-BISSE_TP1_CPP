@@ -4,26 +4,22 @@
 #define _chambre_h
 
 #include <string>
+#include "uid.h"
 
-//enum valtype {Suite, Single, Double} pour les valeurs de type de chambre
+enum typeChambre {Single=1, Double, Suite};
 
 class Chambre
 {
 public:
-	Chambre(int idch=000000, std::string type="00000", float Price=0);
-	int getIdch() const;
-	int getPrice() const;
+	Chambre(uid &id, typeChambre type=Single, int price=100); //uid passing by reference to get the identifier 
+	std::string getIdch() const;                              //from the same class uid for any AAAAA object
 	std::string getType() const;
-	void setIdch(int idch);
-	void setType(std::string);
-	void setPrice(float Price);
+	int getPrice() const;
+	void setChambre();
 
 private:
-	int m_idch; // identifiant de la chambre
-	std::string m_type; // ex : single, Suite Double
-	float m_Price; 
-	
+	std::string m_idch;
+	typeChambre m_type;
+	float m_price; 
 };
-
-
 #endif

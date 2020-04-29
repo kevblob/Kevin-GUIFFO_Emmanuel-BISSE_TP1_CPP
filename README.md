@@ -13,5 +13,4 @@ ________________________________________________________________________________
 ===== Suite Question 3
    ->Ajout de la classe uid pour la génération d'un identifiant unique
    ->Intégration de la uid dans la classe chambre
-   ->Modification du programme principal Chambre-test.cpp
-   *  .[https://drive.google.com/open?id=154PmQNYrz0yUdV2Y8ArpWoPzhm68gGYc].https://drive.google.com/open?id=154PmQNYrz0yUdV2Y8ArpWoPzhm68gGYc
+   ->Modification du programme principal Chambre-test.cpp .[https://drive.google.com/open?id=154PmQNYrz0yUdV2Y8ArpWoPzhm68gGYc].https://drive.google.com/open?id=154PmQNYrz0yUdV2Y8ArpWoPzhm68gGYc
